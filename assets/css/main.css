@@ -5,11 +5,18 @@
 img {
   width: 100%;
 }
-h1, h2, p {
+h1,
+h2,
+p {
   font-family: 'Roboto', sans-serif;
 }
-.header-name h1, .header-name h5 {
-  float: right;
+.header-name  {
+    display: flex;
+    flex-flow: row wrap;
+}
+.header-name h1,
+.header-name h5 {
+  margin-left: auto;
 }
 .site-container .header-name h1 {
   margin-bottom: 0;
@@ -19,6 +26,7 @@ h1, h2, p {
   margin-top: 5%;
 }
 .site-container header hr {
+  padding-top: 2%;
   border-bottom: 4px solid #7d97ad;
 }
 #prj-sec-head {
@@ -48,6 +56,9 @@ footer p {
   header {
     margin-top: 3%;
   }
+  .header-name h1 {
+    font-size: 6vw;
+   }
   .prj-img {
     height: 400px;
   }
